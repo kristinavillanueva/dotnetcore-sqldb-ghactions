@@ -41,7 +41,6 @@ jobs:
         uses: Azure/login@v2.2.0
         with:
           client-id: ${{ secrets.AZURE_CLIENT_ID }}
-          client-secret: ${{ secrets.AZURE_CLIENT_SECRET }}
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           subscriptionId: ${{ env.AZURE_SUBSCRIPTION_ID }}
         
