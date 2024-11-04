@@ -25,12 +25,10 @@
         "type": "string"
         },
         "sqlAdminLogin": {
-        "type": "string",
-        "value":"krisvil_admin"
+        "type": "string"
         },
         "sqlAdminPass": {
-        "type": "securestring",
-        "value": "myadmin1234"
+        "type": "securestring"
         },
         "databaseName": {
         "type": "string"
