@@ -43,16 +43,6 @@ jobs:
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
       
-      - name: Deploy Azure Resources
-        uses: azure/arm-deploy@v1
-        with:
-          scope: resourceGroup
-          subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-          resourceGroupName: ${{ env.AZURE_RESOURCEGROUP_NAME }}
-          template: ./ARM/template.json
-          parameters: ./ARM/parameters.json
-          location: centralus
-          
       # Deployment of template    
       - name: Deploy ARM Template resourcegroup
         uses: azure/arm-deploy@v1
