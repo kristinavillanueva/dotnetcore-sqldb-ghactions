@@ -9,7 +9,7 @@ on:
 permissions:
   id-token: write  # Grant write permission to id-token
   contents: read
-
+ 
 env:
     AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID  }}    # set this to your Azure Subscription Id
     AZURE_RESOURCEGROUP_NAME: github-actions-group                      # set this to your preferred resource group name
