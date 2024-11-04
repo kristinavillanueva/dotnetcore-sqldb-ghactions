@@ -29,7 +29,7 @@
         "value":"krisvil_admin"
         },
         "sqlAdminPass": {
-        "type": "securestring"
+        "type": "securestring",
         "value": "myadmin1234"
         },
         "databaseName": {
